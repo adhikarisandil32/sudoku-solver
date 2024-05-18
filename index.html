@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sudoku Solver</title>
+  </head>
+  <body class="h-screen flex flex-col justify-center">
+    <h2 class="text-center font-bold text-3xl py-2">Sudoku Solver</h2>
+
+    <div class="grid min-w-96 min-h-96 border-2 grid-rows-9 grid-cols-9 border-black mx-auto">
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+      <div class="border border-black font-bold flex items-center justify-center text-2xl" id="individual-grid" contenteditable></div>
+    </div>
+
+    <div class="text-center text-red-600 font-semibold">
+      <span id="error-message"></span>
+    </div>
+
+    <div class="text-center my-4">
+      <button class="py-1 px-4 rounded-md border-2 bg-blue-800 text-white" id="fix-button">Fix Nums</button>
+
+      <button class="py-1 px-4 rounded-md border-2 bg-green-800 text-white" id="solve-button">Solve</button>
+
+      <button class="py-1 px-4 rounded-md border-2 bg-red-800 text-white" id="clear-button">Clear All</button>
+    </div>
+
+    <!-- JavaScript Linked -->
+    <script src="script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
