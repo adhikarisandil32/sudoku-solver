@@ -2,7 +2,6 @@
 
 const solveButton = document.getElementById("solve-button")
 const clearButton = document.getElementById("clear-button")
-const fixButton = document.getElementById("fix-button")
 const individualGrids = document.querySelectorAll("#individual-grid")
 const errorMessageElement = document.getElementById("error-message")
 const rows = 9
@@ -33,7 +32,7 @@ clearButton.addEventListener("click", () => {
   })
 })
 
-fixButton.addEventListener("click", () => {
+solveButton.addEventListener("click", () => {
   displayError(false)
 
   if (!checkForValidInput()) {
@@ -48,12 +47,6 @@ fixButton.addEventListener("click", () => {
       grid.removeAttribute("contenteditable")
     }
   })
-})
-
-solveButton.addEventListener("click", () => {
-  fixButton.click()
-
-  if (!checkForValidInput()) return
 
   const board = getSudokuBoard()
 
